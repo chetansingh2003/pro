@@ -1,0 +1,108 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.why-section {
+  padding: 80px 5%;
+  background: #fafafa;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #06174b;
+}
+
+.underline {
+  width: 70px;
+  height: 4px;
+  background: #f9c300;
+  margin: 15px auto 30px;
+}
+
+.subtitle {
+  max-width: 850px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  background: #fff;
+  padding: 45px 30px;
+  border-radius: 20px;
+  border: 2px solid #e6edf8;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* BLUE FILL */
+.fill-overlay {
+  position: absolute;
+  inset: 0;
+  background: #06174b;
+  transform-origin: left;
+  z-index: 0;
+}
+
+/* DARK CARD DEFAULT */
+/* .card-dark {
+  background: #06174b;
+  color: #fff;
+} */
+
+/* CONTENT ABOVE OVERLAY */
+.card * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ICON */
+.icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background: #06174b;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+/* ICON COLOR ON HOVER */
+.card:hover .icon {
+  background: #fff;
+  color: #06174b;
+}
+
+/* TEXT */
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* TEXT COLOR ON HOVER */
+.card:hover {
+  /* color: #06115b; */
+  background-color: #06174b;
+  color: #e6edf8;
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* Dummy space for scroll */
+.spacer {
+  height: 100vh;
+}
+
+/* ===== STATS SECTION ===== */
+.stats-section {
+  background: linear-gradient(180deg, #000f3b, #001e63);
+  padding: 90px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.stats-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* ===== BOX ===== */
+.stat-box {
+  flex: 1;
+  text-align: center;
+}
+
+/* ===== NUMBER STYLE ===== */
+.stat-box h2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffd400;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  animation: glowPulse 2s infinite alternate;
+}
+
+/* ===== GLOW ANIMATION ===== */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #ffd400;
+  }
+  100% {
+    text-shadow: 0 0 2px #6a00ff,
+      0 0 10px rgba(255, 208, 0, 0.9);
+  }
+}
+
+/* ===== TEXT ===== */
+.stat-box p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  width: 1px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .divider {
+    width: 80px;
+    height: 1px;
+  }
+}

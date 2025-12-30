@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ================= SCROLL BAR ================= */
+.course-bar{
+  width:100%;
+  background:linear-gradient(90deg,#05164d,#061b63);
+  overflow:hidden;
+  padding:14px 0;
+  border-top:4px solid #e91e63;
+}
+
+/* TRACK */
+.course-track{
+  display:flex;
+  width:max-content;
+  animation:scrollCourses 25s linear infinite;
+}
+
+/* PAUSE ON HOVER */
+.course-bar:hover .course-track{
+  animation-play-state:paused;
+}
+
+/* ITEM */
+.course-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:0 30px;
+  color:#fff;
+  white-space:nowrap;
+  font-size:15px;
+  font-weight:500;
+}
+
+/* ICON */
+.course-item i{
+  color:#f4c400;
+  font-size:18px;
+}
+
+/* SEPARATOR */
+.course-item::after{
+  content:"|";
+  color:rgba(255, 255, 255, 0.817);
+  margin-left:30px;
+}
+
+/* REMOVE LAST SEPARATOR */
+.course-item:last-child::after{
+  display:none;
+}
+
+/* ANIMATION */
+@keyframes scrollCourses{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .course-item{
+    font-size:14px;
+    padding:0 20px;
+  }
+}

@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/bg_register_now.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+  position: relative;
+}
+
+/* LEFT SIDE CONTENT */
+.left-content {
+  width: 55%;
+}
+
+.sub-heading {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sub-heading span {
+  color: #ffc107;
+}
+
+.main-heading {
+  font-size: 70px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.stat-box h2 {
+  font-size: 60px;
+  color: #ffcc00;
+  margin: 0;
+}
+
+.stat-box p {
+  font-size: 18px;
+}
+
+/* RIGHT FORM BOX */
+.form-box {
+  width: 380px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.curve-top {
+  background: #ffb500;
+  padding: 25px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  color: white;
+  text-align: center;
+}
+
+form {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  width: 300px;
+  padding: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+form select {
+  width: 330px;
+  padding: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+form button {
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #333;
+}
